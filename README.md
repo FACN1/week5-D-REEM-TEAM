@@ -1,6 +1,8 @@
 # week5-D-REEM-TEAM
 News feed using Guardian API
 
+[![Build Status](https://travis-ci.org/FACN1/week5-D-REEM-TEAM.svg?branch=master)](https://travis-ci.org/FACN1/week5-D-REEM-TEAM)
+
 ### User Stories
 
 ### File Structure
@@ -37,7 +39,7 @@ News feed using Guardian API
 - LATEST ARTICLES - http://content.guardianapis.com/search?order-by=newest&api-key=test
 - https://content.guardianapis.com/world/2017/mar/20/new-roads-create-more-traffic-fail-local-economies-cpre?api-key=test&show-blocks=all
 
-- ```js
+```js
 getArticleContent -> 'https://content.guardianapis.com/' + id + '?api-key=test&show-blocks=all'
 getSearchResults -> 'http://content.guardianapis.com/search?q=' + search-query + '&order-by=newest&api-key=test'
 ```

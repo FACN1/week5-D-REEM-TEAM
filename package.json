@@ -4,7 +4,8 @@
   "description": "News feed using Guardian API",
   "main": "index.js",
   "scripts": {
-    "test": "node src/tests/tests.js | tap-spec"
+    "test": "node src/tests/tests.js | tap-spec",
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",

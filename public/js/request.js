@@ -1,1 +1,2 @@
-console.log("request.js is linked");
+// receives inut from main.js
+// sends requests to server-side index.js / server.js

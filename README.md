@@ -9,6 +9,7 @@ News feed using Guardian API
     - css/
         - main.css
     - js/
+        - index.js (calling all sub-modules)
         - listener.js
         - formatQuery.js
         - search.js

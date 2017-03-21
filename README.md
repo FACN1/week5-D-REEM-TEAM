@@ -1,6 +1,8 @@
 # week5-D-REEM-TEAM
 News feed using Guardian API
 
+[![Build Status](https://travis-ci.org/FACN1/week5-D-REEM-TEAM.svg?branch=master)](https://travis-ci.org/FACN1/week5-D-REEM-TEAM)
+
 ### User Stories
 
 ### File Structure

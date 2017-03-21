@@ -1,0 +1,24 @@
+{
+  "name": "week5-d-reem-team",
+  "version": "1.0.0",
+  "description": "News feed using Guardian API",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/tests/tests.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACN1/week5-D-REEM-TEAM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACN1/week5-D-REEM-TEAM/issues"
+  },
+  "homepage": "https://github.com/FACN1/week5-D-REEM-TEAM#readme",
+  "devDependencies": {
+    "shot": "^3.4.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  }
+}

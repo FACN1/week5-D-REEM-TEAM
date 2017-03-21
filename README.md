@@ -23,6 +23,7 @@ News feed using Guardian API
     - index.js
     - server.js
     - router.js
+    - filterResponse.js
     - routes/
         - static.js
         - search.js

@@ -1,5 +1,6 @@
 const test = require('tape');
 const router = require('../router');
+const mockData = require('./fixtures/mockData');
 
 test('Test that tape is working', (t) => {
     t.ok(true);
@@ -24,6 +25,13 @@ test('Test router with possible routes', (t) => {
     });
 });
 
+test('Test filterResponse with mock data', (t) => {
+
+    var result = filterResponse(mockData.filterResponse.input);
+    var expected = mockData.filterResponse.output;
+    t.equal(result, expected, 'Should convert original object into custom object with our formatting')
+    t.end();
+}
 
 /* Modules to test:
  * - filterResponse.js

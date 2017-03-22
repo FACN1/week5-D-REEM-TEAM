@@ -24,7 +24,9 @@ QUnit.test("Testing FormatQuery Module", function(assert) {
   assert.equal(FormatQuery.formatQuery("   ").message, "Input must include letters", "check if returns trimmed string and not falsey");
   // Does it replace spaces with '%20'?
   // Does it trim white space on either end
-  assert.equal(FormatQuery.formatQuery(" fff  "), "/search?q=%20fff%20%20", "check if returns trimmed string ");
+  assert.equal(FormatQuery.formatQuery(" fff  "), "/search?q=fff", "check if returns trimmed string ");
+  assert.equal(FormatQuery.formatQuery(" fff fff  "), "/search?q=fff%20fff", "check if returns trimmed string ");
+
 
 });
 

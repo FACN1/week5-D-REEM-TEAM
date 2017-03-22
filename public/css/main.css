@@ -50,19 +50,39 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 15px;
 }
 
 p {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
+}
+#latestButton {
+  margin: 0 auto;
+  width: 250px;
+  margin-top: 10px;
 }
 
 #inputSection {
   margin: 0 auto;
   width: 252px;
 }
+
+
+.news-results {
+  border: 3px solid blue;
+  width: 100%;
+  text-align: center;
+}
+
+.headLineLi {
+  text-align: center;
+  border: 3px solid red;
+  color: pink;
+  width: 100%;
+}
+
 input {
   border: 1px blue solid;
   border-radius: 3px;
@@ -80,11 +100,14 @@ body > button {
   display: block;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
 	body {
 		padding: 16px 40px 16px 16px;
 	}
 
-  h1
+  h1 {
+    width:100%
+    padding: 50px;
+  }
 
 }

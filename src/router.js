@@ -7,7 +7,13 @@ var static = require('./routes/static');
 function router(req, res){
   var url = req.url;
   if (url === "/search") {
+    res.writeHead(404)
+    res.end()
     // search(req, res)
+  }
+  else if (url === '/latest') {
+    res.writeHead(404)
+    res.end();
   }
   else {
     static.file(req, res);

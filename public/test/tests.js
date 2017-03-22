@@ -11,6 +11,9 @@ QUnit.test( "hello test", function( assert ) {
 
 // formatQuery
 // Does it return a string?
+QUnit.test("Test if outputs a string", function(assert) {
+  assert.equal()
+});
 // Does it remove upper case?
 // Does it replace spaces with '%20'?
 // Does it trim white space on either end

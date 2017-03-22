@@ -1,6 +1,6 @@
 // receives traffic from the router.
 var request = require('request');
-
+const filterResponse = require('../filterResponse');
 var search = module.exports = {};
 
 var url = 'http://content.guardianapis.com/search?order-by=newest&api-key=test';
@@ -14,6 +14,8 @@ search.latest = function(req, res) {
       res.end("<h1>Internal Server Error :-| </h1>");
     }
     // console.log(body);
+    res.writeHead(200, {"content-type": "application/json"});
+    res.write(JSON.stringify(filterResponse(JSON.parse(body))))
     res.end();
   });
 

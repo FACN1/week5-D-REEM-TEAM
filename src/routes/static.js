@@ -13,6 +13,7 @@ static.file = function(req, res) {
   // store the requested filePath
   var filePath = path.join(publicPath, req.url);
 
+  // convert requests for '/' to index.html
   if (filePath.charAt(filePath.length-1) === '/') filePath = path.join(filePath, 'index.html');
   var extension = String(path.extname(filePath)).toLowerCase();
 
@@ -38,7 +39,6 @@ static.file = function(req, res) {
   // return appropriate content-type value
   header["content-type"] = mimeTypes[extension] || 'text/html'
 
-  // convert requests for '/' to index.html
   fs.readFile(filePath, function (error, file) {
     if (error) {
       if (error.code === 'ENOENT') {

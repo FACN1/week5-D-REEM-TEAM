@@ -6,10 +6,10 @@ var Request = (function() {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4) {
-                if (xhr.statusCode === 200) {
+                if (xhr.status === 200) {
                     callback(null, JSON.parse(xhr.responseText));
                 } else {
-                    callback(new Error('Status code:' + xhr.statusCode));
+                    callback(new Error('Status code:' + xhr.status));
                 }
             }
         }

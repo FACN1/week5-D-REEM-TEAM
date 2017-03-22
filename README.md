@@ -3,8 +3,22 @@ News feed using Guardian API
 
 [![Build Status](https://travis-ci.org/FACN1/week5-D-REEM-TEAM.svg?branch=master)](https://travis-ci.org/FACN1/week5-D-REEM-TEAM)
 
+### Getting Started
+**Use on Heroku**
+  - Heroku link here
+
+**Installation Guide**
+  - Clone this repo `git clone git@github.com:FACN1/week5-D-REEM-TEAM.git`
+  - Install the server `npm install`
+  - to run the server type `npm start`
+
+
+
 ### User Stories
 - I want to be able to view the Guardian News Paper's most recent online articles at the click of a button.
+- I want to be able to search for a certain article or category.
+- I want the site to be easy to use and not difficult to navigate.
+- I want a summary for the website and what it does.
 - (Stretch goal) I want to be able to search Guardian online articles related to that subjects that I search for.
 
 ### File Structure
@@ -49,3 +63,4 @@ getSearchResults -> 'http://content.guardianapis.com/search?q=' + search-query +
 
 ### Resources
 - https://github.com/FACN1/week5-D-REEM-TEAM/commit/65ecaeca8c157f06e03ea2f42d743bb8043390d1
+- https://developer.mozilla.org/en-US/docs/Node_server_without_framework

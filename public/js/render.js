@@ -8,6 +8,7 @@ var Render = (function() {
 
         response.results.forEach((result, index) => {
             var resultLi = document.createElement('li');
+            resultLi.className = "headLineLi"
 
             var articleTitle = document.createElement('h2');
             articleTitle.textContent = result.title;

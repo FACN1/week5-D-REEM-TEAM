@@ -13,7 +13,8 @@ search.latest = function(req, res) {
       res.writeHead(500, {"content-type" : "text/html"});
       res.end("<h1>Internal Server Error :-| </h1>");
     }
-    console.log(body);
+    // console.log(body);
+    res.end();
   });
 
 }

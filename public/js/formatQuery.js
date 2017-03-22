@@ -10,7 +10,7 @@ var FormatQuery = (function() {
     } else if (!queryString.trim()) {
       return new Error("Input must include letters")
     }
-    var queryArray = queryString.split("");
+    var queryArray = queryString.trim().split("");
     queryArray.forEach(function(query, index){
       if (query === " ") {
         queryArray[index] = "%20";

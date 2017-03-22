@@ -5,18 +5,21 @@ var Listener = (function() {
 
   var latestButton = document.getElementById('latestButton');
 
-  latestButton.addEventListener('click', function(event) {
-    var url = "/latest";
-    Request.makeRequest("GET", url, function(err, response) {
-      if(err) {
-          console.log(err.message);
-          return;
-      }
-      console.log(response);
-      Render.renderToDOM(response);
-    });
+  var initLatestButton = (callback) => {
+      latestButton.addEventListener('click', function(event) {
+        var url = "/latest";
+        Request.makeRequest("GET", url, function(err, response) {
+          if(err) {
+              callback(err);
+              return;
+          }
+          callback(null, response);
+          Render.renderToDOM(response);
+        });
 
-  });
+      });
+  }
+
 
 // set listener for 'get latest news'.
 
@@ -26,6 +29,6 @@ var Listener = (function() {
 
 
     return {
-
+        initLatestButton: initLatestButton
     }
 })();

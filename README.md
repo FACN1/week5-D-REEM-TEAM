@@ -43,3 +43,7 @@ News feed using Guardian API
 getArticleContent -> 'https://content.guardianapis.com/' + id + '?api-key=test&show-blocks=all'
 getSearchResults -> 'http://content.guardianapis.com/search?q=' + search-query + '&order-by=newest&api-key=test'
 ```
+
+
+### Resources
+- https://github.com/FACN1/week5-D-REEM-TEAM/commit/65ecaeca8c157f06e03ea2f42d743bb8043390d1

@@ -5,7 +5,7 @@ var Listener = (function() {
 
   var latestButton = document.getElementById('latestButton');
 
-  latestButton.addEventListener('click', function(callback) {
+  latestButton.addEventListener('click', function(event) {
     var url = "/latest";
     Request.makeRequest("GET", url, function(err, response) {
       if(err) {
@@ -16,7 +16,6 @@ var Listener = (function() {
       Render.renderToDOM(response);
     });
 
-    callback();
   });
 
 // set listener for 'get latest news'.

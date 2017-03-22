@@ -17,13 +17,6 @@ var Request = (function() {
         xhr.send();
     }
 
-    makeRequest((error, data) => {
-        if (error) {
-            console.log(error.message);
-            return;
-        }
-
-    });
 
     return {
         makeRequest: makeRequest

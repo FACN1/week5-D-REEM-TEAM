@@ -6,13 +6,18 @@ var static = require('./routes/static');
 //creates a router function (req,res)
 function router(req, res){
   var url = req.url;
-  if (url === "/") {
-    static(req, res)
+  if (url === "/search") {
+    res.writeHead(404)
+    res.end()
+    // search(req, res)
+  }
+  else if (url === '/latest') {
+    res.writeHead(404)
+    res.end();
   }
   else {
-    static(req, res)
+    static.file(req, res);
   }
-  res.end();
 }
 //redirect requests to relevant handler
 module.exports = {

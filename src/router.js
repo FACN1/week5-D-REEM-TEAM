@@ -2,16 +2,14 @@
 
 // import handlers modules
 var static = require('./routes/static');
-
+const search = require('./routes/search');
 //creates a router function (req,res)
 function router(req, res){
   var url = req.url;
-  if (url === "/search") {
-    res.writeHead(404)
-    res.end()
-    // search(req, res)
+  if (url === "/latest") {
+    search.latest(req, res)
   }
-  else if (url === '/latest') {
+  else if (url === '/search') {
     res.writeHead(404)
     res.end();
   }

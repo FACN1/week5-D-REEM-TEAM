@@ -4,6 +4,8 @@ News feed using Guardian API
 [![Build Status](https://travis-ci.org/FACN1/week5-D-REEM-TEAM.svg?branch=master)](https://travis-ci.org/FACN1/week5-D-REEM-TEAM)
 
 ### User Stories
+- I want to be able to view the Guardian News Paper's most recent online articles at the click of a button.
+- (Stretch goal) I want to be able to search Guardian online articles related to that subjects that I search for.
 
 ### File Structure
 - public/

@@ -8,6 +8,10 @@ var Listener = (function() {
   latestButton.addEventListener('click', function(callback) {
     var url = "/latest";
     Request.makeRequest("GET", url, function(err, response) {
+      if(err) {
+          console.log(err.message);
+          return;
+      }
       console.log(response);
       Render.renderToDOM(response);
     });

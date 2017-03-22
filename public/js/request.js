@@ -5,7 +5,7 @@ var Request = (function() {
     var makeRequest = (callback) => {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange((e) => {
-            if (xhr.readyState === 4)
+            if (xhr.readyState === 4) {
                 if (xhr.statusCode === 200) {
                     callback(null, JSON.parse(xhr.responseText));
                 } else {

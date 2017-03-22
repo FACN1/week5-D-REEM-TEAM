@@ -15,4 +15,3 @@ QUnit.test( "hello test", function( assert ) {
 // Does it replace spaces with '%20'?
 // Does it trim white space on either end
 // Does it remove special characters?
-// When given a correct entry does it ?

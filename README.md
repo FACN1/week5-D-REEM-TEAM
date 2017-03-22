@@ -5,7 +5,7 @@ News feed using Guardian API
 
 ### Getting Started
 **Use on Heroku**
-  - Heroku link here
+  - [Heroku link here](https://ancient-cove-53883.herokuapp.com/)
 
 **Installation Guide**
   - Clone this repo `git clone git@github.com:FACN1/week5-D-REEM-TEAM.git`

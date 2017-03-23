@@ -3,5 +3,6 @@ Listener.initLatestButton((error, response) => {
         console.log("Error in makeRequest: ", error);
         return;
     }
-    console.log("Response: ", response);
+    Render.renderToDOM(response);
+    // console.log("Response: ", response); DEBUG LOG
 })

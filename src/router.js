@@ -2,8 +2,8 @@
 router = module.exports = {};
 
 // import handlers modules
-const staticHandler = require('./routes/static');
-const search = require('./routes/search');
+const staticHandler = require('./routes/staticHandler');
+const search = require('./routes/searchHandler');
 //creates a router function (req,res)
 router.listener = (req, res) => {
   var url = req.url;

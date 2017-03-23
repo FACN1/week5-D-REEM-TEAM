@@ -14,16 +14,16 @@ test('Test router with possible routes', (t) => {
     // Test router:
     // Make sure that it redirects to correct handler
 
-    shot.inject(router.router, { method: 'get', url: '/' }, (res) => {
+    shot.inject(router.listener, { method: 'get', url: '/' }, (res) => {
         t.equal(res.statusCode, 200, '/ should have statusCode 200 because the URL exists');
     });
-    shot.inject(router.router, { method: 'get', url: '/search' }, (res) => {
+    shot.inject(router.listener, { method: 'get', url: '/search' }, (res) => {
         t.equal(res.statusCode, 200, '/search should have statusCode 200 because the URL exists');
     });
-    shot.inject(router.router, { method: 'get', url: '/latest' }, (res) => {
+    shot.inject(router.listener, { method: 'get', url: '/latest' }, (res) => {
         t.equal(res.statusCode, 200, '/latest should have statusCode 200 because the URL exists');
     });
-    shot.inject(router.router, { method: 'get', url: '/2934o9siudf9asndu934' }, (res) => {
+    shot.inject(router.listener, { method: 'get', url: '/2934o9siudf9asndu934' }, (res) => {
         t.equal(res.statusCode, 404, '/2934o9siudf9asndu934 should have statusCode 404 because the URL doesn\'t exist');
     });
 });

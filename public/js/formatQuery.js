@@ -5,7 +5,7 @@ var FormatQuery = (function() {
     if (!queryString) {
       return new Error("Input can't be empty")
     }
-    else if(typeof(queryString) !== "string") {
+    if(typeof(queryString) !== "string") {
       return new Error("Input is not a string")
     } else if (!queryString.trim()) {
       return new Error("Input must include letters")

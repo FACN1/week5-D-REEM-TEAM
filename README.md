@@ -30,6 +30,10 @@ News feed using Guardian API
   - So that: I can easily stay up to date with news.
 - I want a summary for the website and what it does.
 
+### Initial Planning
+
+![Image of white board planning](./DSC_0872.png)
+
 ### File Structure
 - public/
     - index.html

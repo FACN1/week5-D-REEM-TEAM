@@ -19,15 +19,15 @@ News feed using Guardian API
 - As a: concerned citizen
   - I want to: view the latest news with ease
   - So that: i can sleep at night
-- As a: mobile user
+- As a: liberal mobile user
   - I want to be able to view the Guardian News Paper's most recent online articles at the click of a button, or on load
   - So that: I can see news quickly
 - As a: sports fan
   - I want to: be able to search for a certain article or category
-  - So that: I can find article relevant to me
-- As a: user with little patience
-  - I want to: the site to be easy and fast to use
-  - So that: I don't lose much time
+  - So that: I can find article relevant to me.
+- As a: socialist user with little patience
+  - I want to: access the Guardian online's news content with minimum effort.
+  - So that: I can easily stay up to date with news.
 - I want a summary for the website and what it does.
 
 ### File Structure

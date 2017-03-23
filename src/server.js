@@ -1,3 +1,4 @@
+server = module.exports = {};
 // import http core module and router module
 const http = require('http');
 const router = require('./router');
@@ -7,7 +8,7 @@ const port = process.env.PORT || 3000;
 
 // create server and pass the router, pass out log to confirm the server works.
 
-function startServer(){
+server.start = () => {
   var server = http.createServer(router.router);
 
   server.listen(port, function(error){
@@ -16,8 +17,4 @@ function startServer(){
     }
     console.log('server is running on port: ', port);
   })
-}
-
-module.exports = {
-  start: startServer
 }

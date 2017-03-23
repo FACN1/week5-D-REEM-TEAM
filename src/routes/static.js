@@ -15,7 +15,7 @@ static.file = function(req, res) {
 
   // convert requests for '/' to index.html
   if (filePath.charAt(filePath.length-1) === '/') filePath = path.join(filePath, 'index.html');
-  var extension = String(path.extname(filePath)).toLowerCase();
+  var extension = path.extname(filePath).toLowerCase();
 
   // look up headers
   var header = {};

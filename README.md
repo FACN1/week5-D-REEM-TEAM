@@ -8,18 +8,27 @@ News feed using Guardian API
   - [Heroku link here](https://ancient-cove-53883.herokuapp.com/)
 
 **Installation Guide**
-  - Clone this repo `git clone git@github.com:FACN1/week5-D-REEM-TEAM.git`
-  - Install the server `npm install`
-  - to run the server type `npm start`
+  - Clone this repo `git clone https://github.com/FACN1/week5-D-REEM-TEAM.git`
+  - Install the dependencies (such as request) `npm install`
+  - To run the server type `npm start`
+  - To run tests, type `npm test`
 
 
 
 ### User Stories
-- I want to be able to view the Guardian News Paper's most recent online articles at the click of a button.
-- I want to be able to search for a certain article or category.
-- I want the site to be easy to use and not difficult to navigate.
+- As a: concerned citizen
+  - I want to: view the latest news with ease
+  - So that: i can sleep at night
+- As a: liberal mobile user
+  - I want to be able to view the Guardian News Paper's most recent online articles at the click of a button, or on load
+  - So that: I can see news quickly
+- As a: sports fan
+  - I want to: be able to search for a certain article or category
+  - So that: I can find article relevant to me.
+- As a: socialist user with little patience
+  - I want to: access the Guardian online's news content with minimum effort.
+  - So that: I can easily stay up to date with news.
 - I want a summary for the website and what it does.
-- (Stretch goal) I want to be able to search Guardian online articles related to that subjects that I search for.
 
 ### File Structure
 - public/

@@ -1,10 +1,11 @@
 // receives from server.js
+router = module.exports = {};
 
 // import handlers modules
-var static = require('./routes/static');
-const search = require('./routes/search');
+const staticHandler = require('./routes/staticHandler');
+const search = require('./routes/searchHandler');
 //creates a router function (req,res)
-function router(req, res){
+router.listener = (req, res) => {
   var url = req.url;
   if (url === "/latest") {
     search.latest(req, res)
@@ -14,10 +15,7 @@ function router(req, res){
     res.end();
   }
   else {
-    static.file(req, res);
+    staticHandler.file(req, res);
   }
 }
 //redirect requests to relevant handler
-module.exports = {
-  router: router
-}

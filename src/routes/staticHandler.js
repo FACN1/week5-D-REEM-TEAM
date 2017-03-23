@@ -1,6 +1,6 @@
 // receives traffic from router
 // sends traffic on to the browser
-var static = module.exports = {};
+var staticHandler = module.exports = {};
 // require modules
 const fs = require('fs');
 const path = require('path');
@@ -9,13 +9,13 @@ const http = require('http');
 const publicPath = path.join(__dirname, '../../public');
 // takes file requests from router and serve files back to the browser.
 
-static.file = function(req, res) {
+staticHandler.file = function(req, res) {
   // store the requested filePath
   var filePath = path.join(publicPath, req.url);
 
   // convert requests for '/' to index.html
   if (filePath.charAt(filePath.length-1) === '/') filePath = path.join(filePath, 'index.html');
-  var extension = String(path.extname(filePath)).toLowerCase();
+  var extension = path.extname(filePath).toLowerCase();
 
   // look up headers
   var header = {};
@@ -27,14 +27,7 @@ static.file = function(req, res) {
     '.json': 'application/json',
     '.png': 'image/png',
     '.jpg': 'image/jpg',
-    '.gif': 'image/gif',
-    '.wav': 'audio/wav',
-    '.mp4': 'video/mp4',
-    '.woff': 'application/font-woff',
-    '.ttf': 'application/font-ttf',
-    '.eot': 'application/vnd.ms-fontobject',
-    '.otf': 'application/font-otf',
-    '.svg': 'application/image/svg+xml'
+    '.gif': 'image/gif'
   };
   // return appropriate content-type value
   header["content-type"] = mimeTypes[extension] || 'text/html'

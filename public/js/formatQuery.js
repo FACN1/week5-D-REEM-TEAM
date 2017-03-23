@@ -5,19 +5,15 @@ var FormatQuery = (function() {
     if (!queryString) {
       return new Error("Input can't be empty")
     }
-    else if(typeof(queryString) !== "string") {
+    if(typeof(queryString) !== "string") {
       return new Error("Input is not a string")
     } else if (!queryString.trim()) {
       return new Error("Input must include letters")
     }
-    var queryArray = queryString.trim().split("");
-    queryArray.forEach(function(query, index){
-      if (query === " ") {
-        queryArray[index] = "%20";
-      }
+    var formattedQuery =  queryString.trim().replace(" ", "%20");
 
-    });
-    return "/search?q=" + queryArray.join("").toLowerCase();
+
+    return "/search?q=" + formattedQuery.toLowerCase();
   }
 
 

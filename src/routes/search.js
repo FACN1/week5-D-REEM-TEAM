@@ -1,5 +1,5 @@
 // receives traffic from the router.
-var request = require('request');
+const request = require('request');
 const filterResponse = require('../filterResponse');
 var search = module.exports = {};
 

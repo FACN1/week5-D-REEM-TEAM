@@ -1,7 +1,7 @@
 // receives from server.js
 
 // import handlers modules
-var static = require('./routes/static');
+const static = require('./routes/static');
 const search = require('./routes/search');
 //creates a router function (req,res)
 function router(req, res){

@@ -10,10 +10,10 @@ var FormatQuery = (function() {
     } else if (!queryString.trim()) {
       return new Error("Input must include letters")
     }
-    queryString.trim().replace(" ", "%20");
+    var formattedQuery =  queryString.trim().replace(" ", "%20");
 
 
-    return "/search?q=" + queryString.toLowerCase();
+    return "/search?q=" + formattedQuery.toLowerCase();
   }
 
 

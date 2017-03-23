@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 // create server and pass the router, pass out log to confirm the server works.
 
 server.start = () => {
-  var server = http.createServer(router.router);
+  var server = http.createServer(router.listener);
 
   server.listen(port, function(error){
     if(error){

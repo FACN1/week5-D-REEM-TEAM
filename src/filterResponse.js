@@ -4,7 +4,6 @@
 // returns traffic back to the search module
 
 module.exports = function(response) {
-    console.log(response);
 
     var filteredResponse = {};
 

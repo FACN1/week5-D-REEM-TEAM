@@ -54,6 +54,11 @@ h1 {
   font-size: 50px;
   margin-bottom: 15px;
 }
+h2 {
+	color: black;
+	padding: 8px;
+	font-size: 1.5rem;
+}
 main {
 	height: 100vh;
 }
@@ -84,7 +89,7 @@ p {
 
 
 .news-results {
-  border: 3px solid blue;
+  border: 1px solid blue;
 	box-sizing: border-box;
   width: 100%;
   text-align: center;
@@ -92,9 +97,9 @@ p {
 
 .headLineLi {
   text-align: center;
-  border: 3px solid red;
+  border: 1px solid #cecece;
 	box-sizing: border-box;
-  color: pink;
+  color: black;
   width: 100%;
 }
 

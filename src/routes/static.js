@@ -1,6 +1,6 @@
 // receives traffic from router
 // sends traffic on to the browser
-var static = module.exports = {};
+var staticHandler = module.exports = {};
 // require modules
 const fs = require('fs');
 const path = require('path');
@@ -9,7 +9,7 @@ const http = require('http');
 const publicPath = path.join(__dirname, '../../public');
 // takes file requests from router and serve files back to the browser.
 
-static.file = function(req, res) {
+staticHandler.file = function(req, res) {
   // store the requested filePath
   var filePath = path.join(publicPath, req.url);
 

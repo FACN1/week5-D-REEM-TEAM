@@ -21,6 +21,10 @@ News feed using Guardian API
 - I want a summary for the website and what it does.
 - (Stretch goal) I want to be able to search Guardian online articles related to that subjects that I search for.
 
+### Initial Planning
+
+![Image of white board planning](./DSC_0872.png)
+
 ### File Structure
 - public/
     - index.html

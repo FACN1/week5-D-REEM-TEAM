@@ -10,14 +10,10 @@ var FormatQuery = (function() {
     } else if (!queryString.trim()) {
       return new Error("Input must include letters")
     }
-    var queryArray = queryString.trim().split("");
-    queryArray.forEach(function(query, index){
-      if (query === " ") {
-        queryArray[index] = "%20";
-      }
+    queryString.trim().replace(" ", "%20");
 
-    });
-    return "/search?q=" + queryArray.join("").toLowerCase();
+
+    return "/search?q=" + queryString.toLowerCase();
   }
 
 
